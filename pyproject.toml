@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "timeseries-simp"
+version = "0.1.0"
+description = "Generates a time-series dataset"
+authors = ["sthysel <sthysel@gmail>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.2.4"
+numpy = "^1.20.3"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+pytest = "^6.2.4"
+flake8 = "^3.9.2"
+epc = "^0.0.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
