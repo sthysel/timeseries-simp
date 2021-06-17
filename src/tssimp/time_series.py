@@ -5,7 +5,7 @@ import pandas as pd
 class TimeSeries:
     def __init__(
         self,
-        index: pd.DatetimeUndex,
+        index: pd.DatetimeIndex,
         y,
     ):
         if not isinstance(index, pd.DatetimeIndex):

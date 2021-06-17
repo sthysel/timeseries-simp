@@ -31,12 +31,12 @@ def cosine(
     end,
     freq,
     amp=1,
-    n_periods=1,
+    period=1,
 ):
     index = pd.date_range(start=start, end=end, freq=freq)
     return TimeSeries(
         index=index,
-        y=amp * np.cos(np.linspace(0, math.tau * n_periods, num=len(index))),
+        y=amp * np.cos(np.linspace(0, math.tau * period, num=len(index))),
     )
 
 
@@ -44,10 +44,10 @@ def sine(
     start,
     end,
     freq,
-    n_periods=1,
+    period=1,
 ):
     index = pd.date_range(start=start, end=end, freq=freq)
     return TimeSeries(
         index=index,
-        y=np.sin(np.linspace(0, math.tau * n_periods, num=len(index))),
+        y=np.sin(np.linspace(0, math.tau * period, num=len(index))),
     )
